@@ -1,5 +1,5 @@
 // API base URL
-const apiBaseUrl = 'http://localhost:3000/api/todos';
+const apiBaseUrl = 'https://todoapp-pr5m.onrender.com/api/todos';
 
 // DOM elements
 const todoForm = document.getElementById('todo-form');
