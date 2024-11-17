@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="todo-container">
+      <h1>TODO LIST</h1>
+
+      <div class="controls">
+        <div class="search-container">
+          <input type="text" id="search-bar" placeholder="Search Todos..." />
+          <i class="fa fa-search search-icon"></i>
+        </div>
+      
+        <select id="filter-dropdown">
+          <option value="all">All</option>
+          <option value="active">Incomplete</option>
+          <option value="completed">Complete</option>
+        </select>    
+       <div id="dark-mode-button"><i class="fa fa-moon-o fa-lg" aria-hidden="true"></i>
+       </div>  
+      </div>
+      
+      <ul id="todo-list"></ul>
+        <!-- Add Button that opens the dialog -->
+        <div id="open-add-todo-dialog" class="add-todo-button">
+          <i class="fa fa-plus"></i> 
+        </div>
+  
+        <!-- Dialog with the form -->
+        <dialog id="todo-dialog">
+          <form id="todo-form" method="dialog">
+            <h2>NEW NOTE</h2>
+            <div class="note-input"><input
+              type="text"
+              id="todo-title"
+              placeholder="Input Your Note..."
+              required
+            /></div>
+            <div class="dialog-buttons">
+            <button type="button" id="close-dialog-btn">Cancel</button><button type="submit" id="add-todo-btn">
+              Apply
+            </button></div>
+          </form>
+        </dialog>
+      </div>
+
+      
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </body>
+</html>
