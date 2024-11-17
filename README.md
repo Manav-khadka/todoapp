@@ -45,7 +45,7 @@ and api at http://localhost:3000/api/todos
 
 ## Technologies Used
 - **Frontend:** HTML, CSS, JavaScript
-- **Backend (if applicable):** Node.js, Express (or any other server technology)
+- **Backend :** Node.js, Express 
 - **API:** RESTful API with JSON data
 - **LocalStorage** for dark mode preference
 
